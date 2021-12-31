@@ -24,7 +24,7 @@ def main(query: str):
         return "Beijing, China"
 
     if 'capital of japan' in query or 'capital of jp' in query or 'japan capital' in query or 'jp capital' in query or 'capital japan' in query:
-        return "Paris, Ile-de-France, France"
+        return "Tokyo, Japan"
 
     res = client.query(query)
     res = next(res.results).text
