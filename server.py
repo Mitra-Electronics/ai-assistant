@@ -23,7 +23,10 @@ def main(query: str):
     elif 'capital of china' in query or 'capital of cn' in query or 'china capital' in query or 'cn capital' in query:
         return "Beijing, China"
 
-    if 'capital of japan' in query or 'capital of jp' in query or 'japan capital' in query or 'jp capital' in query or 'capital japan' in query:
+    elif 'capital of usa' in query or 'capital of united states of america' in query or 'capital of us' in query or 'capital of united states of america' in query or 'usa capital' in query or 'us capital' in query:
+        return "Washington, District of Columbia, United States"
+
+    elif 'capital of japan' in query or 'capital of jp' in query or 'japan capital' in query or 'jp capital' in query or 'capital japan' in query:
         return "Tokyo, Japan"
 
     res = client.query(query)
